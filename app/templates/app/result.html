@@ -1,0 +1,17 @@
+{%  extends 'app/base.html' %}
+
+{% block content %}
+    <div>
+    <p>{{ name }}さんの運勢</p>
+    </div>
+    <div>
+    <p>あした死にます！</p><br>
+    </div>
+    <div>
+       <form action="{% url 'result' %}" method="post">
+          {% csrf_token %}
+          {{ nameform }}
+          <input type="submit" value="Click!!">
+       </form>
+   </div>
+{%  endblock %}

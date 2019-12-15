@@ -22,15 +22,15 @@ def pokemon(name):
     x = len(name)
     y = x % 5
     if y == 0:
-        pokemon = "https://www.pokemon.jp/zukan/detail/001.html"
+        pokemon = "hushi.JPG"
     elif y == 1:
-        pokemon = "https://www.pokemon.jp/zukan/detail/006.html"
+        pokemon = "riza.JPG"
     elif y == 2:
-        pokemon = "https://www.pokemon.jp/zukan/detail/011.html"
+        pokemon = "tora.JPG"
     elif y == 3:
-        pokemon = "https://www.pokemon.jp/zukan/detail/039.html"
+        pokemon = "puri.JPG"
     else:
-        pokemon = "https://www.pokemon.jp/zukan/detail/383.html"
+        pokemon = "gura.JPG"
     return pokemon
 
 def pokename(name):

@@ -5,7 +5,10 @@
     <p>{{ name }}さんの運勢</p>
     </div>
     <div>
-    <p>あした死にます！</p><br>
+    <p>あなたはポケモンでいうと{{ pokename }}！</p><br>
+    </div>
+    <div>
+        <h1><a href="{{ pokemon }}">{{ pokename }}</a></h1><br>
     </div>
     <div>
        <form action="{% url 'result' %}" method="post">
